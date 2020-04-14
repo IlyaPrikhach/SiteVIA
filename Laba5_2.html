@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI.com</title>
+    <link href="Carcas.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="JSCAN.js"></script>
+</head>
+<body onload="CAN()">
+<div id="wrapper">
+    <div id="header">
+        <div class="home"><a href="Carcas.html"><img src="CSSImages/home.png" height="35px" width="50"/></a></div>
+        <h1>Введение в интерпретируемые языки</h1>
+    </div>
+    <div id="content">
+        <div class = "textbox" >
+            <h3>Задание 2</h3>
+            Реализуйте игру крестики-нолики. Играет два человека, на одном поле по очереди.
+        </div>
+        <p class="turn"></p>
+        <table id ="mainTable">
+            <tr>
+                <td > <table class="game" id="tableGame">
+                    <tr>
+                        <td class="tdg" data-index="0"></td>
+                        <td class="tdg" data-index="1"></td>
+                        <td class="tdg" data-index="2"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdg" data-index="3"></td>
+                        <td class="tdg" data-index="4"></td>
+                        <td class="tdg" data-index="5"></td>
+                    </tr>
+                    <tr>
+                        <td class="tdg" data-index="6"></td>
+                        <td class="tdg" data-index="7"></td>
+                        <td class="tdg" data-index="8"></td>
+                    </tr>
+                </table></td>
+                <td ><div class="resultTable">
+                    <p>Выиграл х: <b>0</b></p>
+                    <p>Выиграл 0: <b>0</b></p>
+                    <p>Ничья: <b>0</b></p>
+                </div></td>
+            </tr>
+        </table>
+        <button id="start">Начать сначала</button>
+
+    </div>
+
+    <div id="footer">
+        Прихач Илья Петрович</br>
+        Группа: КФ-2</br>
+        Вариант: 4
+    </div>
+</div>
+
+</body>
+
+</html>

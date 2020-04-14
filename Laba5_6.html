@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI.com</title>
+    <link href="Carcas.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="JSShulte.js"></script>
+</head>
+<body onload="shulte()">
+<div id="wrapper">
+    <div id="header">
+        <div class="home"><a href="Carcas.html"><img src="CSSImages/home.png" height="35px" width="50"/></a></div>
+        <h1>Введение в интерпретируемые языки</h1>
+    </div>
+    <div id="content">
+        <div class = "textbox" >
+            <h3>Задание 6</h3>
+            Сделайте игру. Суть - дана таблица с числами, расположенными в случайном порядке в ячейках таблицы. Числа
+            идут по порядку от 1 до N. Все числа разного размера и цвета. Играющему необходимо по порядку кликать по
+            числам - сначала 1, потом 2 и так далее до N. Когда он кликает на правильную ячейку - она активируется и
+            делает красный фон (предыдущие правильные ячейки не снимают выделение). Должен тикать таймер, на игру дается
+            M секунд. Если не успел найти все числа по порядку - проиграл.
+        </div>
+
+        <div id="game">
+            <input type="button" id="start" value="Начать" style="display: none;">
+            <div id="timerGame">Времени осталось: 45</div>
+            <div class="shulteTable">
+            <table id="game_table">
+                <tbody>
+                <tr>
+                    <td class="tds" style="font-size:35px;color:rgb(65,148,239)">10</td>
+                    <td class="tds" style="font-size:15px;color:rgb(218,70,63)">12</td>
+                    <td class="tds" style="font-size:24px;color:rgb(85,160,220)">5</td>
+                    <td class="tds" style="font-size:16px;color:rgb(226,136,132)">22</td>
+                    <td class="tds" style="font-size:33px;color:rgb(185,117,196)">11</td>
+                </tr>
+                <tr>
+                    <td class="tds" style="font-size:21px;color:rgb(58,4,115)">3</td>
+                    <td class="tds" style="font-size:29px;color:rgb(97,108,216)">17</td>
+                    <td class="tds" style="font-size:37px;color:rgb(44,64,131)">25</td>
+                    <td class="tds" style="font-size:19px;color:rgb(193,4,110)">7</td>
+                    <td class="tds" style="font-size:35px;color:rgb(165,129,252)">6</td>
+                </tr>
+                <tr>
+                    <td class="tds" style="font-size:22px;color:rgb(4,141,212)">4</td>
+                    <td class="tds" style="font-size:34px;color:rgb(209,236,135)">2</td>
+                    <td class="tds" style="font-size:31px;color:rgb(55,39,41)">14</td>
+                    <td class="tds" style="font-size:17px;color:rgb(137,142,228)">13</td>
+                    <td class="tds" style="font-size:18px;color:rgb(224,118,103)">15</td>
+                </tr>
+                <tr>
+                    <td class="tds" style="font-size:29px;color:rgb(99,149,156)">20</td>
+                    <td class="tds" style="font-size:18px;color:rgb(152,58,173)">1</td>
+                    <td class="tds" style="font-size:37px;color:rgb(10,185,126)">16</td>
+                    <td class="tds" style="font-size:35px;color:rgb(207,63,244)">18</td>
+                    <td class="tds" style="font-size:34px;color:rgb(82,82,235)">23</td>
+                </tr>
+                <tr>
+                    <td class="tds" style="font-size:25px;color:rgb(31,230,212)">24</td>
+                    <td class="tds" style="font-size:33px;color:rgb(194,247,204)">19</td>
+                    <td class="tds" style="font-size:28px;color:rgb(69,156,111)">8</td>
+                    <td class="tds" style="font-size:35px;color:rgb(22,34,129)">9</td>
+                    <td class="tds" style="font-size:30px;color:rgb(114,253,199)">21</td>
+                </tr>
+                </tbody>
+            </table>
+                </div>
+            <input type="button" id="restart" value="Начать сначала" style="display: block;">
+        </div>
+    </div>
+    <div id="footer">
+        Прихач Илья Петрович</br>
+        Группа: КФ-2</br>
+        Вариант: 4
+    </div>
+</div>
+
+</body>
+
+</html>

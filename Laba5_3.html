@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PI.com</title>
+    <link href="Carcas.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="JSlaba5_3.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <div class="home"><a href="Carcas.html"><img src="CSSImages/home.png" height="35px" width="50"/></a></div>
+        <h1>Введение в интерпретируемые языки</h1>
+    </div>
+    <div id="content">
+        <div class = "textbox" >
+            <h3>Задание 3</h3>
+            Реализуйте опрос. В нем будет 5 вариантов ответа - 5 радио кнопок, а также инпут 'свой ответ'. Если в
+            инпуте есть ответ - значения радиокнопок игнорируются. Реализуйте кнопку 'пройти опрос заново'. Опрос можно
+            проходить много раз, результаты заносятся в массив и после прохождения опроса показывается процент ответов
+            на каждый вопрос.
+        </div>
+        <div class="opros">
+        <p class="oprosText">Какой язык программирования вы предпочитаете?</p>
+        <table class="table1" id = "">
+            <tr>
+                <td>
+            <tr><td class="tableOpros"><input type="radio" id="html" name="contact" value="html"><label class="cont" for="html">HTML</label></td></tr>
+            <tr><td class="tableOpros"> <input type="radio" id="css"  name="contact" value="css"><label class="cont" for="css">CSS</label></td></tr>
+            <tr><td class="tableOpros"> <input type="radio" id="js" name="contact" value="js"><label class="cont" for="js">JavaScript</label></td></tr>
+            <tr><td class="tableOpros"> <input type="radio" id="php"  name="contact" value="php"><label class="cont" for="php">PHP</label></td></tr>
+            <tr><td class="tableOpros"> <input type="radio" id="python"  name="contact" value="python"><label class="cont" for="python">Python</label></td></tr>
+            <tr><td class="tableOpros"> <input type="text" class="labInput" id="yourText" value="Свой вариант ответа"></td></tr>
+            </td>
+            </tr>
+            <tr>
+            <td> <button id="btopros" class="button" onclick="jslaba53()">Проверить</button></td>
+            <tr><td> <button id="reopros" class="button" onclick="reopros()">Повторить</button></td>
+            <td> <button id="statistic" class="button" onclick="statistic()">Статистика</button></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div id="footer">
+        Прихач Илья Петрович</br>
+        Группа: КФ-2</br>
+        Вариант: 4
+    </div>
+</div>
+
+</body>
+
+</html>
